@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xamarinforms:BottomBarPage Title="GenTree" BarBackgroundColor="LightSeaGreen" BackgroundImage="logo.jpg"
+    xmlns:xamarinforms="clr-namespace:BottomBar.XamarinForms;assembly=BottomBar.XamarinForms"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GenTree.ViewModels"
+            xmlns:local1="clr-namespace:GenTree.Views"
+            x:Class="GenTree.MainPage">
+
+    <TabbedPage.Children>
+        <local1:Tree />
+        <local1:Relatives />
+        <local1:Settings />
+    </TabbedPage.Children>
+
+</xamarinforms:BottomBarPage>

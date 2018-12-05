@@ -1,0 +1,15 @@
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\bin\Debug\netstandard2.0\GenTree.deps.json
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\bin\Debug\netstandard2.0\GenTree.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\bin\Debug\netstandard2.0\GenTree.pdb
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.csprojAssemblyReference.cache
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.csproj.CoreCompileInputs.cache
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.AssemblyInfoInputs.cache
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.AssemblyInfo.cs
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.pdb
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\Relatives.xaml.g.cs
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\Settings.xaml.g.cs
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\Tree.xaml.g.cs
