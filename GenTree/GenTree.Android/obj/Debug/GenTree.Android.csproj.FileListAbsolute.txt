@@ -107,6 +107,7 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\res\mipmap-mdpi
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\res\mipmap-xhdpi\logo.png
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\res\mipmap-xxhdpi\logo.png
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\res\mipmap-xxxhdpi\logo.png
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\res\drawable\person.png
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\bin\Debug\GenTree.Android.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\linksrc\GenTree.pdb
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\linksrc\GenTree.Android.dll.mdb

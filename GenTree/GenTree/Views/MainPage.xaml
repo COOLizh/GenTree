@@ -7,7 +7,7 @@
             xmlns:local1="clr-namespace:GenTree.Views"
             x:Class="GenTree.MainPage">
 
-    <TabbedPage.Children>
+    <TabbedPage.Children xamarinforms:BottomBarPageExtensions.TabColor="#20b2aa">
         <local1:Tree />
         <local1:Relatives />
         <local1:Settings />

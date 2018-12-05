@@ -10,10 +10,25 @@
             <local:MainViewModel/>
         </ContentPage.BindingContext>
 
-    <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-            <Label HorizontalOptions="Center" VerticalOptions="Center" FontSize="40" Text="This is settings"/>
-        </StackLayout>
-    </ContentPage.Content>
+    <TableView>
+        <TableView.Root>
+            <TableRoot>
+                <TableSection Title="Personal information">
+                    <ImageCell ImageSource="person.png" 
+                               Text="myName mySurname"
+                               Detail="myBirthday myGender"/>
+                    <TextCell 
+                        Text="Login : "
+                        Detail="myLogin"/>
+                    <TextCell 
+                        Text="Password : "
+                        Detail="myPassword"/>
+                </TableSection>
+                <TableSection Title="Application settings">
+                    <SwitchCell Text="Theme" />
+                </TableSection>
+            </TableRoot>
+        </TableView.Root>
+    </TableView>
 
 </ContentPage>
