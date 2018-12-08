@@ -29,3 +29,7 @@ BottomBar.Droid
 BottomBar.XamarinForms
 BottomNavigationBar
 Newtonsoft.Json
+Storm.Mvvm.Android
+Storm.Mvvm
+System.Resources.ResourceManager
+System.Reflection.Extensions

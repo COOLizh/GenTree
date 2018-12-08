@@ -20,9 +20,6 @@
           "lib/MonoAndroid403/BottomNavigationBar.dll": {}
         }
       },
-      "Mvvm/1.0.4": {
-        "type": "package"
-      },
       "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
@@ -357,14 +354,14 @@
           "build/MonoAndroid81/Xamarin.Android.Support.Vector.Drawable.targets": {}
         }
       },
-      "Xamarin.Forms/3.0.0.561731": {
+      "Xamarin.Forms/3.4.0.1008975": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Android.Support.Design": "25.4.0.2",
-          "Xamarin.Android.Support.v4": "25.4.0.2",
-          "Xamarin.Android.Support.v7.AppCompat": "25.4.0.2",
-          "Xamarin.Android.Support.v7.CardView": "25.4.0.2",
-          "Xamarin.Android.Support.v7.MediaRouter": "25.4.0.2"
+          "Xamarin.Android.Support.Design": "27.0.2",
+          "Xamarin.Android.Support.v4": "27.0.2",
+          "Xamarin.Android.Support.v7.AppCompat": "27.0.2",
+          "Xamarin.Android.Support.v7.CardView": "27.0.2",
+          "Xamarin.Android.Support.v7.MediaRouter": "27.0.2"
         },
         "compile": {
           "lib/MonoAndroid10/FormsViewGroup.dll": {},
@@ -381,17 +378,16 @@
           "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll": {}
         },
         "build": {
-          "build/netstandard2.0/Xamarin.Forms.props": {},
-          "build/netstandard2.0/Xamarin.Forms.targets": {}
+          "build/Xamarin.Forms.props": {},
+          "build/Xamarin.Forms.targets": {}
         }
       },
       "GenTree/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Mvvm": "1.0.4",
           "ThriveGmbH.BottomNavigationBar.XF": "1.0.2",
-          "Xamarin.Forms": "3.0.0.561731"
+          "Xamarin.Forms": "3.4.0.1008975"
         },
         "compile": {
           "bin/placeholder/GenTree.dll": {}
@@ -404,10 +400,11 @@
   },
   "libraries": {
     "BottomNavigationBar/1.1.2": {
-      "sha512": "9k80Yh/XMyKulkznd7p+vgkJGjHZTHe3EbniqQQgDy4nDQaNzMEtedhSfkXdTxNVqBY6BmNUmh6OQhq/77dH8A==",
+      "sha512": "HV5iFmTSMZo8UI98l82gQJ4zmtQ9GHhRqiczjc580byZWQpiBY9H3r5PtAPF8JFmYs0/jSImKbh8DXd8ncWcRg==",
       "type": "package",
       "path": "bottomnavigationbar/1.1.2",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "bottomnavigationbar.1.1.2.nupkg.sha512",
         "bottomnavigationbar.nuspec",
@@ -415,22 +412,13 @@
         "lib/MonoAndroid403/BottomNavigationBar.xml"
       ]
     },
-    "Mvvm/1.0.4": {
-      "sha512": "A+sO/MjaI6W3GAQGgkmu3iOQSXl2k/o7g/D2kQhzZ9qm94Md161Qk48pXqJpsCiS3uRnkvihSB3mT1bayTAuVA==",
-      "type": "package",
-      "path": "mvvm/1.0.4",
-      "files": [
-        "lib/Mvvm.XML",
-        "lib/Mvvm.dll",
-        "mvvm.1.0.4.nupkg.sha512",
-        "mvvm.nuspec"
-      ]
-    },
     "Newtonsoft.Json/8.0.3": {
-      "sha512": "ASsyeMyk6XGBpGPEYC6byWtF8WOdQNZxygeSNVXE7S5q5LXqCleGhdJgKFAMCwXO/H1XDOTJKHEg+VtzMkWuPQ==",
+      "sha512": "KGsYQdS2zLH+H8x2cZaSI7e+YZ4SFIbyy1YJQYl6GYBWjf5o4H1A68nxyq+WTyVSOJQ4GqS/DiPE+UseUizgMg==",
       "type": "package",
       "path": "newtonsoft.json/8.0.3",
+      "hasTools": true,
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -450,10 +438,11 @@
       ]
     },
     "ThriveGmbH.BottomNavigationBar.XF/1.0.2": {
-      "sha512": "nb8TIw0WJ086cB4/uNoYdKHop9MEyVcCa6HJisya+HBhsYTfiznRQ5d97Y1G7mP5Gk1H+2NZXl92U9aQq1OjJw==",
+      "sha512": "CAxjraz7v27mWxrChvLLggDRq5Icf3OA0IL3lpGY+rfUGH488kZzBB3WJmfbgh7q5yfBbva51Iuv4tFleepV2A==",
       "type": "package",
       "path": "thrivegmbh.bottomnavigationbar.xf/1.0.2",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/MonoAndroid10/BottomBar.Droid.dll",
         "lib/MonoAndroid10/BottomBar.XamarinForms.dll",
@@ -699,24 +688,25 @@
         "xamarin.android.support.vector.drawable.nuspec"
       ]
     },
-    "Xamarin.Forms/3.0.0.561731": {
-      "sha512": "ZnpuSybty6uZsgInJQD2QoYsjsdzPmu25EltSNJTnwgiQCW0MVZfwU6//jbt4Sf0ZfAiryi8MZFhU1I0NAP6Ew==",
+    "Xamarin.Forms/3.4.0.1008975": {
+      "sha512": "036/h8HtzRFgTrfhY57IeHoYRsPTO2XTA6uUFdmZzw2QR1sdszfofhI9HrCJTRx6fCzmjPg5Cxk5chYrjKarNw==",
       "type": "package",
-      "path": "xamarin.forms/3.0.0.561731",
+      "path": "xamarin.forms/3.4.0.1008975",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
-        "build/netstandard1.0/Mono.Cecil.Mdb.dll",
-        "build/netstandard1.0/Mono.Cecil.Pdb.dll",
-        "build/netstandard1.0/Mono.Cecil.Rocks.dll",
-        "build/netstandard1.0/Mono.Cecil.dll",
-        "build/netstandard1.0/System.CodeDom.dll",
-        "build/netstandard1.0/Xamarin.Forms.Build.Tasks.dll",
-        "build/netstandard1.0/Xamarin.Forms.Core.dll",
-        "build/netstandard1.0/Xamarin.Forms.DefaultItems.props",
-        "build/netstandard1.0/Xamarin.Forms.DefaultItems.targets",
-        "build/netstandard1.0/Xamarin.Forms.Xaml.dll",
-        "build/netstandard1.0/Xamarin.Forms.props",
-        "build/netstandard1.0/Xamarin.Forms.targets",
+        "build/Xamarin.Forms.DefaultItems.props",
+        "build/Xamarin.Forms.DefaultItems.targets",
+        "build/Xamarin.Forms.props",
+        "build/Xamarin.Forms.targets",
+        "build/net461/Mono.Cecil.Mdb.dll",
+        "build/net461/Mono.Cecil.Pdb.dll",
+        "build/net461/Mono.Cecil.Rocks.dll",
+        "build/net461/Mono.Cecil.dll",
+        "build/net461/System.CodeDom.dll",
+        "build/net461/Xamarin.Forms.Build.Tasks.dll",
+        "build/net461/Xamarin.Forms.Core.dll",
+        "build/net461/Xamarin.Forms.Xaml.dll",
         "build/netstandard2.0/Mono.Cecil.Mdb.dll",
         "build/netstandard2.0/Mono.Cecil.Pdb.dll",
         "build/netstandard2.0/Mono.Cecil.Rocks.dll",
@@ -724,21 +714,15 @@
         "build/netstandard2.0/System.CodeDom.dll",
         "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
         "build/netstandard2.0/Xamarin.Forms.Core.dll",
-        "build/netstandard2.0/Xamarin.Forms.DefaultItems.props",
-        "build/netstandard2.0/Xamarin.Forms.DefaultItems.targets",
         "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
-        "build/netstandard2.0/Xamarin.Forms.props",
-        "build/netstandard2.0/Xamarin.Forms.targets",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid10/FormsViewGroup.dll",
-        "lib/MonoAndroid10/FormsViewGroup.dll.mdb",
         "lib/MonoAndroid10/FormsViewGroup.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
-        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
@@ -840,12 +824,13 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.0.0.561731.nupkg.sha512",
+        "xamarin.forms.3.4.0.1008975.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -863,7 +848,7 @@
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2",
       "Xamarin.Android.Support.v7.CardView >= 27.0.2",
       "Xamarin.Android.Support.v7.MediaRouter >= 27.0.2",
-      "Xamarin.Forms >= 3.0.0.561731"
+      "Xamarin.Forms >= 3.4.0.1008975"
     ]
   },
   "packageFolders": {
@@ -925,21 +910,10 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.0.0.561731, )"
+            "version": "[3.4.0.1008975, )"
           }
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package Mvvm 1.0.4 is not compatible with monoandroid81 (MonoAndroid,Version=v8.1). Package Mvvm 1.0.4 supports: net (.NETFramework,Version=v0.0)",
-      "libraryId": "Mvvm",
-      "targetGraphs": [
-        "MonoAndroid,Version=v8.1"
-      ]
-    }
-  ]
+  }
 }

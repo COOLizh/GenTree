@@ -6,14 +6,27 @@
              xmlns:local="clr-namespace:GenTree.ViewModels"
              x:Class="GenTree.Views.Relatives">
     
-    <ContentPage.BindingContext>
+    <!--<ContentPage.BindingContext>
             <local:MainViewModel/>
-        </ContentPage.BindingContext>
+        </ContentPage.BindingContext>-->
 
-    <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-            <Label HorizontalOptions="Center" VerticalOptions="Center" FontSize="40" Text="This is relatives"/>
-        </StackLayout>
-    </ContentPage.Content>
-    
+    <StackLayout>
+        <Button Text="Add" Command="{Binding CreatePersonCommand}" />
+        <ListView x:Name="booksList" ItemsSource="{Binding Persons}"
+              SelectedItem="{Binding SelectedPerson, Mode=TwoWay}" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label Text="{Binding Name}" FontSize="Medium" />
+                                <Label Text="{Binding Surname}" FontSize="Small" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
 </ContentPage>

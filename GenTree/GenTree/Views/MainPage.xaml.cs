@@ -4,6 +4,7 @@ using System.Windows;
 using GenTree.ViewModels;
 using BottomBar;
 using BottomBar.XamarinForms;
+using GenTree.Views;
 
 namespace GenTree
 {
@@ -12,7 +13,7 @@ namespace GenTree
 		public MainPage()
 		{
 			InitializeComponent();
-            BindingContext = new MainViewModel();
+            //BindingContext = new MainViewModel();
 		}
 	}
 }

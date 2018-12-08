@@ -1,14 +1,47 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using GenTree.Models;
+using System.IO;
+using GenTree.ViewModels;
 
 namespace GenTree.ViewModels
 {
-    class MainViewModel:INotifyPropertyChanged
+    public class MainViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        private Person person;
+        public Person person { get; private set; }
+        PersonsListViewModel pvm;
+
+        public MainViewModel()
+        {
+            person = new Person();
+        }
+
+        public PersonsListViewModel ListViewModel
+        {
+            get { return pvm; }
+            set
+            {
+                if (pvm != value)
+                {
+                    pvm = value;
+                    OnPropertyChanged("ListViewModel");
+                }
+            }
+        }
+
+        public bool IsValid
+        {
+            get
+            {
+                return ((!string.IsNullOrEmpty(Name.Trim())) ||
+                    (!string.IsNullOrEmpty(Surname.Trim())) ||
+                    (!string.IsNullOrEmpty(Gender.Trim())) ||
+                    (!string.IsNullOrEmpty(DoB.Trim())));
+            }
+        }
 
         public string Name
         {
@@ -49,7 +82,7 @@ namespace GenTree.ViewModels
             }
         }
 
-        public bool Gender
+        public string Gender
         {
             get { return person.Gender; }
             set
@@ -62,36 +95,23 @@ namespace GenTree.ViewModels
             }
         }
 
+        public string Id
+        {
+            get { return person.Id; }
+            set
+            {
+                if (person.Id != value)
+                {
+                    person.Id = value;
+                    OnPropertyChanged("Id");
+                }
+            }
+        }
 
         protected void OnPropertyChanged(string propName)
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
-
-        //private int _Clicks;
-
-        //public int Clicks
-        //{
-        //    get { return _Clicks; }
-        //    set
-        //    {
-        //        _Clicks = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
-
-        //public MainViewModel()
-        //{
-        //    Task.Factory.StartNew(() =>
-        //    {
-        //        while (true)
-        //        {
-        //            Task.Delay(1000).Wait();
-
-        //            Clicks++;
-        //        }
-        //    });
-        //}
     }
 }

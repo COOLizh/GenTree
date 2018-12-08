@@ -15,8 +15,8 @@
             <TableRoot>
                 <TableSection Title="Personal information">
                     <ImageCell ImageSource="person.png" 
-                               Text="myName mySurname"
-                               Detail="myBirthday myGender"/>
+                               Text="{Binding Name}"
+                               Detail="{Binding Surname}"/>
                     <TextCell 
                         Text="Login : "
                         Detail="myLogin"/>
