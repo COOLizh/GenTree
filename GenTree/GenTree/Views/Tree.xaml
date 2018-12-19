@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Tree" Icon="tree.png" BackgroundColor="WhiteSmoke"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="GenTree.Views.Tree">
+    <ContentPage.Content>
+        <StackLayout>
+            <forms:AnimationView
+	                x:Name="animationViewProfile" 
+	                Animation="tree.json" 
+	                Loop="True" 
+	                AutoPlay="True"
+                    HeightRequest="450"
+                    WidthRequest="450"/>
+                
+                <Label Text="Tree!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

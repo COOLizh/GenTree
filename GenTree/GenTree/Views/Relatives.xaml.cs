@@ -18,5 +18,5 @@ namespace GenTree.Views
 			InitializeComponent ();
             BindingContext = new PersonsListViewModel(){ Navigation = this.Navigation};
 		}
-	}
+    }
 }

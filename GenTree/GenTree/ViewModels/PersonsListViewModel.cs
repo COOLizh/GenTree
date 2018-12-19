@@ -6,12 +6,23 @@ using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 using GenTree.Views;
+using System.Linq;
+using GenTree.Models;
 
 namespace GenTree.ViewModels
 {
      public class PersonsListViewModel : INotifyPropertyChanged
     {
-        public ObservableCollection<MainViewModel> Persons { get; set; }
+        private ObservableCollection<MainViewModel> _persons;
+        public ObservableCollection<MainViewModel> Persons
+        {
+            get => _persons;
+            set
+            {
+                _persons = value;
+                OnPropertyChanged("Persons");
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -19,9 +30,12 @@ namespace GenTree.ViewModels
         public ICommand DeletePersonCommand { protected set; get; }
         public ICommand SavePersonCommand { protected set; get; }
         public ICommand BackCommand { protected set; get; }
+        public ICommand SearchPersonsCommand { protected set; get; }
         MainViewModel selectedPerson;
 
         public INavigation Navigation { get; set; }
+
+        public string MySearchText { get; set; }
 
         public PersonsListViewModel()
         {
@@ -30,6 +44,7 @@ namespace GenTree.ViewModels
             DeletePersonCommand = new Command(DeletePerson);
             SavePersonCommand = new Command(SavePerson);
             BackCommand = new Command(Back);
+            SearchPersonsCommand = new Command(SearchPersons);
         }
 
         public MainViewModel SelectedFriend
@@ -60,23 +75,29 @@ namespace GenTree.ViewModels
         {
             Navigation.PopAsync();
         }
-        private void SavePerson(object friendObject)
+        private void SavePerson(object personObject)
         {
-            MainViewModel friend = friendObject as MainViewModel;
-            if (friend != null && friend.IsValid)
+            MainViewModel person = personObject as MainViewModel;
+            if (person != null && person.IsValid)
             {
-                Persons.Add(friend);
+                Persons.Add(person);
             }
             Back();
         }
-        private void DeletePerson(object friendObject)
+        private void DeletePerson(object personObject)
         {
-            MainViewModel friend = friendObject as MainViewModel;
-            if (friend != null)
+            MainViewModel person = personObject as MainViewModel;
+            if (person != null)
             {
-               Persons.Remove(friend);
+               Persons.Remove(person);
             }
             Back();
+        }
+
+        private void SearchPersons()
+        {
+            var tempRecords = Persons.Where(p => p.Name.Contains(MySearchText));
+            Persons = new ObservableCollection<MainViewModel>(tempRecords);
         }
     }
 }

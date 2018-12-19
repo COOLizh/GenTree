@@ -5,6 +5,8 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\asse
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\FormsViewGroup.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\GenTree.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Java.Interop.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Lottie.Android.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Lottie.Forms.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Mono.Android.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\mscorlib.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Newtonsoft.Json.dll

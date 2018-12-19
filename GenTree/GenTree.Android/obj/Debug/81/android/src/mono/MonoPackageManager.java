@@ -112,6 +112,8 @@ class MonoPackageManager_Resources {
 		"BottomNavigationBar.dll",
 		"FormsViewGroup.dll",
 		"GenTree.dll",
+		"Lottie.Android.dll",
+		"Lottie.Forms.dll",
 		"Newtonsoft.Json.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

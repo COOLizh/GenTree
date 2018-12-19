@@ -1,16 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage Title="Relatives" Icon="family.png" BackgroundColor="Gold" xamarinforms:BottomBarPageExtensions.TabColor="#20b2aa"
+<ContentPage Title="Relatives" Icon="family.png" BackgroundColor="WhiteSmoke" xamarinforms:BottomBarPageExtensions.TabColor="#20b2aa"
     xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:xamarinforms="clr-namespace:BottomBar.XamarinForms;assembly=BottomBar.XamarinForms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GenTree.ViewModels"
              x:Class="GenTree.Views.Relatives">
-    
+
     <!--<ContentPage.BindingContext>
-            <local:MainViewModel/>
-        </ContentPage.BindingContext>-->
+        <local:PersonsListViewModel/>
+    </ContentPage.BindingContext>-->
 
     <StackLayout>
+        <SearchBar x:Name="MainSearchBar"
+                   Text="{Binding MySearchText}"
+                   SearchCommand="{Binding ListViewModel.SearchPersons}"
+                   SearchCommandParameter="{Binding}"/>
+
         <Button Text="Add" Command="{Binding CreatePersonCommand}" />
         <ListView x:Name="booksList" ItemsSource="{Binding Persons}"
               SelectedItem="{Binding SelectedPerson, Mode=TwoWay}" HasUnevenRows="True">

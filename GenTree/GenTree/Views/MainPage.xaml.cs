@@ -13,7 +13,6 @@ namespace GenTree
 		public MainPage()
 		{
 			InitializeComponent();
-            //BindingContext = new MainViewModel();
 		}
 	}
 }
