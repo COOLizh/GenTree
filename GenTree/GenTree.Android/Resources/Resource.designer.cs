@@ -5606,26 +5606,26 @@ namespace GenTree.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f020135
-			public const int avd_hide_password_1 = 2130837813;
-			
 			// aapt resource value: 0x7f020136
-			public const int avd_hide_password_2 = 2130837814;
+			public const int avd_hide_password_1 = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int avd_hide_password_3 = 2130837815;
+			public const int avd_hide_password_2 = 2130837815;
+			
+			// aapt resource value: 0x7f020138
+			public const int avd_hide_password_3 = 2130837816;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f020138
-			public const int avd_show_password_1 = 2130837816;
-			
 			// aapt resource value: 0x7f020139
-			public const int avd_show_password_2 = 2130837817;
+			public const int avd_show_password_1 = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int avd_show_password_3 = 2130837818;
+			public const int avd_show_password_2 = 2130837818;
+			
+			// aapt resource value: 0x7f02013b
+			public const int avd_show_password_3 = 2130837819;
 			
 			// aapt resource value: 0x7f020055
 			public const int bb_bottom_bar_top_shadow = 2130837589;
@@ -6275,11 +6275,11 @@ namespace GenTree.Droid
 			// aapt resource value: 0x7f02012c
 			public const int notification_icon_background = 2130837804;
 			
-			// aapt resource value: 0x7f020133
-			public const int notification_template_icon_bg = 2130837811;
-			
 			// aapt resource value: 0x7f020134
-			public const int notification_template_icon_low_bg = 2130837812;
+			public const int notification_template_icon_bg = 2130837812;
+			
+			// aapt resource value: 0x7f020135
+			public const int notification_template_icon_low_bg = 2130837813;
 			
 			// aapt resource value: 0x7f02012d
 			public const int notification_tile_bg = 2130837805;
@@ -6291,13 +6291,16 @@ namespace GenTree.Droid
 			public const int person = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int tooltip_frame_dark = 2130837808;
+			public const int splashscreen = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int tooltip_frame_light = 2130837809;
+			public const int tooltip_frame_dark = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int tree = 2130837810;
+			public const int tooltip_frame_light = 2130837810;
+			
+			// aapt resource value: 0x7f020133
+			public const int tree = 2130837811;
 			
 			static Drawable()
 			{
@@ -7521,8 +7524,8 @@ namespace GenTree.Droid
 			// aapt resource value: 0x7f0c016e
 			public const int Animation_Design_BottomSheetDialog = 2131493230;
 			
-			// aapt resource value: 0x7f0c0199
-			public const int AppCompatDialogStyle = 2131493273;
+			// aapt resource value: 0x7f0c019a
+			public const int AppCompatDialogStyle = 2131493274;
 			
 			// aapt resource value: 0x7f0c0196
 			public const int BB_BottomBarBadge_Text = 2131493270;
@@ -8049,11 +8052,11 @@ namespace GenTree.Droid
 			// aapt resource value: 0x7f0c000e
 			public const int CardView_Light = 2131492878;
 			
-			// aapt resource value: 0x7f0c0197
-			public const int MainTheme = 2131493271;
-			
 			// aapt resource value: 0x7f0c0198
-			public const int MainTheme_Base = 2131493272;
+			public const int MainTheme = 2131493272;
+			
+			// aapt resource value: 0x7f0c0199
+			public const int MainTheme_Base = 2131493273;
 			
 			// aapt resource value: 0x7f0c002d
 			public const int Platform_AppCompat = 2131492909;
@@ -8444,6 +8447,9 @@ namespace GenTree.Droid
 			
 			// aapt resource value: 0x7f0c0006
 			public const int Theme_MediaRouter_LightControlPanel = 2131492870;
+			
+			// aapt resource value: 0x7f0c0197
+			public const int Theme_Splash = 2131493271;
 			
 			// aapt resource value: 0x7f0c0116
 			public const int ThemeOverlay_AppCompat = 2131493142;

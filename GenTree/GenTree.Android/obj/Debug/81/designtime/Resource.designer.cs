@@ -5577,8 +5577,8 @@ namespace GenTree.Droid
 			// aapt resource value: 0x7F090055
 			public const int avd_show_password = 2131296341;
 			
-			// aapt resource value: 0x7F010007
-			public const int bb_bottom_bar_top_shadow = 2130771975;
+			// aapt resource value: 0x7F010008
+			public const int bb_bottom_bar_top_shadow = 2130771976;
 			
 			// aapt resource value: 0x7F090056
 			public const int design_bottom_navigation_item_background = 2131296342;
@@ -6240,14 +6240,17 @@ namespace GenTree.Droid
 			// aapt resource value: 0x7F010005
 			public const int person = 2130771973;
 			
+			// aapt resource value: 0x7F010006
+			public const int splashscreen = 2130771974;
+			
 			// aapt resource value: 0x7F090060
 			public const int tooltip_frame_dark = 2131296352;
 			
 			// aapt resource value: 0x7F090061
 			public const int tooltip_frame_light = 2131296353;
 			
-			// aapt resource value: 0x7F010006
-			public const int tree = 2130771974;
+			// aapt resource value: 0x7F010007
+			public const int tree = 2130771975;
 			
 			static Drawable()
 			{
@@ -7384,8 +7387,8 @@ namespace GenTree.Droid
 			// aapt resource value: 0x7F160006
 			public const int Animation_Design_BottomSheetDialog = 2132148230;
 			
-			// aapt resource value: 0x7F060004
-			public const int AppCompatDialogStyle = 2131099652;
+			// aapt resource value: 0x7F060005
+			public const int AppCompatDialogStyle = 2131099653;
 			
 			// aapt resource value: 0x7F160006
 			public const int Base_AlertDialog_AppCompat = 2132148230;
@@ -7879,29 +7882,29 @@ namespace GenTree.Droid
 			// aapt resource value: 0x7F1600A9
 			public const int Base_Widget_Design_TabLayout = 2132148393;
 			
-			// aapt resource value: 0x7F060012
-			public const int BB_BottomBarBadge_Text = 2131099666;
-			
-			// aapt resource value: 0x7F060005
-			public const int BB_BottomBarItem = 2131099653;
+			// aapt resource value: 0x7F060013
+			public const int BB_BottomBarBadge_Text = 2131099667;
 			
 			// aapt resource value: 0x7F060006
-			public const int BB_BottomBarItem_Fixed = 2131099654;
-			
-			// aapt resource value: 0x7F060008
-			public const int BB_BottomBarItem_Fixed_TitleAppearance = 2131099656;
-			
-			// aapt resource value: 0x7F060009
-			public const int BB_BottomBarItem_Shifting = 2131099657;
-			
-			// aapt resource value: 0x7F060010
-			public const int BB_BottomBarItem_Shifting_TitleAppearance = 2131099664;
-			
-			// aapt resource value: 0x7F060011
-			public const int BB_BottomBarItem_Tablet = 2131099665;
+			public const int BB_BottomBarItem = 2131099654;
 			
 			// aapt resource value: 0x7F060007
-			public const int BB_BottomBarItem_TitleStyle = 2131099655;
+			public const int BB_BottomBarItem_Fixed = 2131099655;
+			
+			// aapt resource value: 0x7F060009
+			public const int BB_BottomBarItem_Fixed_TitleAppearance = 2131099657;
+			
+			// aapt resource value: 0x7F060010
+			public const int BB_BottomBarItem_Shifting = 2131099664;
+			
+			// aapt resource value: 0x7F060011
+			public const int BB_BottomBarItem_Shifting_TitleAppearance = 2131099665;
+			
+			// aapt resource value: 0x7F060012
+			public const int BB_BottomBarItem_Tablet = 2131099666;
+			
+			// aapt resource value: 0x7F060008
+			public const int BB_BottomBarItem_TitleStyle = 2131099656;
 			
 			// aapt resource value: 0x7F160002
 			public const int CardView = 2132148226;
@@ -7912,11 +7915,11 @@ namespace GenTree.Droid
 			// aapt resource value: 0x7F160004
 			public const int CardView_Light = 2132148228;
 			
-			// aapt resource value: 0x7F060002
-			public const int MainTheme = 2131099650;
-			
 			// aapt resource value: 0x7F060003
-			public const int MainTheme_Base = 2131099651;
+			public const int MainTheme = 2131099651;
+			
+			// aapt resource value: 0x7F060004
+			public const int MainTheme_Base = 2131099652;
 			
 			// aapt resource value: 0x7F16009F
 			public const int Platform_AppCompat = 2132148383;
@@ -8334,6 +8337,9 @@ namespace GenTree.Droid
 			
 			// aapt resource value: 0x7F160121
 			public const int Theme_MediaRouter_Light_DarkControlPanel = 2132148513;
+			
+			// aapt resource value: 0x7F060002
+			public const int Theme_Splash = 2131099650;
 			
 			// aapt resource value: 0x7F16010B
 			public const int Widget_AppCompat_ActionBar = 2132148491;
