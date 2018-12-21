@@ -11,12 +11,5 @@ namespace GenTree.Models
         public string DoB { get; set; }
         public string Gender { get; set; }
         public string Id { get; set; }
-
-        
-
-        //public bool MoB { get; set; }
-        //public bool SoB { get; set; }
-        //public bool Children { get; set; }
-        //public bool Spouse { get; set; }
     }
 }

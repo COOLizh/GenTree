@@ -13,17 +13,26 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Helpers\Russian.Designer.cs">
+    <Compile Update="Helpers\AppResources - Copy.Designer.cs">
+      <DependentUpon>AppResources - Copy.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Russian.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Helpers\AppResources - Copy.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Helpers\Russian.resx">
+    <EmbeddedResource Update="Helpers\AppResources.ru.resx">
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Russian.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Helpers\AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources - Copy.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Intro.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

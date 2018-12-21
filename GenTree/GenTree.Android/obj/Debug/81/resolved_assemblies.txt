@@ -53,3 +53,4 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\asse
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.Web.Services.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.Globalization.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Mono.Security.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\linksrc\ru\GenTree.resources.dll

@@ -16,4 +16,7 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.pdb
-C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.Helpers.Russian.resources
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.Helpers.AppResources.resources
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.Helpers.AppResources.ru.resources
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\bin\Debug\netstandard2.0\ru\GenTree.resources.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\ru\GenTree.resources.dll

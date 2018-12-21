@@ -17,6 +17,11 @@
         },
         "runtime": {
           "GenTree.dll": {}
+        },
+        "resources": {
+          "ru/GenTree.resources.dll": {
+            "locale": "ru"
+          }
         }
       },
       "Com.Airbnb.Xamarin.Forms.Lottie/2.6.3": {
