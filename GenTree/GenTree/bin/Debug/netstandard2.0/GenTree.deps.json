@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "67d1370a0baecb929131c9a8023e99a765fe0d43"
+    "signature": "346b2a1d79dbfc12bd9cb5027a314acdf5071d49"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,6 +11,7 @@
         "dependencies": {
           "Com.Airbnb.Xamarin.Forms.Lottie": "2.6.3",
           "NETStandard.Library": "2.0.3",
+          "Plugin.Multilingual": "1.0.2",
           "ThriveGmbH.BottomNavigationBar.XF": "1.0.2",
           "Xamarin.Forms": "3.4.0.1008975"
         },
@@ -33,6 +34,21 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Plugin.Multilingual/1.0.2": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.Multilingual.Abstractions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.0/Plugin.Multilingual.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ThriveGmbH.BottomNavigationBar.XF/1.0.2": {
@@ -87,6 +103,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Plugin.Multilingual/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xf74OLz0KRWKTkFbFGnefL9ISqNjxbGg4Zgp4W3Uda6QiUMFe/WvBfYPcox/m8d3yiza9t9BryCyzpNU8ivk/g==",
+      "path": "plugin.multilingual/1.0.2",
+      "hashPath": "plugin.multilingual.1.0.2.nupkg.sha512"
     },
     "ThriveGmbH.BottomNavigationBar.XF/1.0.2": {
       "type": "package",

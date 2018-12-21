@@ -6,6 +6,8 @@ GenTree
 Lottie.Android
 Lottie.Forms
 Newtonsoft.Json
+Plugin.Multilingual.Abstractions
+Plugin.Multilingual
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common

@@ -115,6 +115,8 @@ class MonoPackageManager_Resources {
 		"Lottie.Android.dll",
 		"Lottie.Forms.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Multilingual.Abstractions.dll",
+		"Plugin.Multilingual.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",

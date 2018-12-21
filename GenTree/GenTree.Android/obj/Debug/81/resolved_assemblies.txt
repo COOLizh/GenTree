@@ -10,6 +10,8 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\asse
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Mono.Android.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\mscorlib.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Newtonsoft.Json.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Plugin.Multilingual.Abstractions.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Plugin.Multilingual.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.Core.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.Xml.dll
@@ -49,4 +51,5 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\asse
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.Runtime.Serialization.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.ServiceModel.Internals.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.Web.Services.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.Globalization.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Mono.Security.dll

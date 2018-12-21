@@ -21,6 +21,7 @@ namespace GenTree.ViewModels
             {
                 _persons = value;
                 OnPropertyChanged("Persons");
+                OnPropertyChanged("ListViewModel");
             }
         }
 
