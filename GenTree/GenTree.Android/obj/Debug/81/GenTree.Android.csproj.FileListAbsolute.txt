@@ -125,7 +125,7 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\asse
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\bin\Debug\ru\GenTree.resources.dll
-C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\res\drawable\splashscreen.png
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\res\drawable\splashscreen.jpg
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\bin\Debug\GenTree.Android.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\linksrc\GenTree.Android.dll.mdb
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\linksrc\Lottie.Android.dll.mdb
