@@ -2,6 +2,8 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using GenTree.Views;
+using BottomBar;
+using BottomBar.XamarinForms;
 using System.Threading.Tasks;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
@@ -13,7 +15,7 @@ namespace GenTree
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage()) { BarBackgroundColor = Color.FromHex("20B2AA") };
         }
 
 		protected override void OnStart ()

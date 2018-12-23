@@ -17,7 +17,7 @@
         </StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
             <Button Text="{translation:Translate AddMes}" Command="{Binding ListViewModel.SavePersonCommand}" CommandParameter="{Binding}" />
-            <Button Text="{translation:Translate DeletMes}" Command="{Binding ListViewModel.DeletePersonCommand}" CommandParameter="{Binding}" />
+            <Button Text="{translation:Translate DeleteMes}" Command="{Binding ListViewModel.DeletePersonCommand}" CommandParameter="{Binding}" />
             <Button Text="{translation:Translate BackMes}" Command="{Binding Path=ListViewModel.BackCommand}" />
         </StackLayout>
     </StackLayout>
