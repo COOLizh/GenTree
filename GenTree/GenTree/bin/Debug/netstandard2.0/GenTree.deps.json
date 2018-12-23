@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "346b2a1d79dbfc12bd9cb5027a314acdf5071d49"
+    "signature": "12418a6e9350a88494335225edbb278e39939c90"
   },
   "compilationOptions": {},
   "targets": {
@@ -13,6 +13,7 @@
           "NETStandard.Library": "2.0.3",
           "Plugin.Multilingual": "1.0.2",
           "ThriveGmbH.BottomNavigationBar.XF": "1.0.2",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Forms": "3.4.0.1008975"
         },
         "runtime": {
@@ -56,11 +57,30 @@
           }
         }
       },
+      "Plugin.Permissions/3.0.0.12": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "ThriveGmbH.BottomNavigationBar.XF/1.0.2": {
         "runtime": {
           "lib/portable-net45+win8+wpa81/BottomBar.XamarinForms.dll": {
             "assemblyVersion": "1.0.6334.21543",
             "fileVersion": "1.0.6334.21543"
+          }
+        }
+      },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "dependencies": {
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Media.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -116,12 +136,26 @@
       "path": "plugin.multilingual/1.0.2",
       "hashPath": "plugin.multilingual.1.0.2.nupkg.sha512"
     },
+    "Plugin.Permissions/3.0.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R8Rlzfci1byoPBGOiJfCMzu0HhhN6Q4Vq4YizlF41W946NEmoL/Mb8U5caP5t5KfSbdPQpzdQ9JfM8fxPG8pfw==",
+      "path": "plugin.permissions/3.0.0.12",
+      "hashPath": "plugin.permissions.3.0.0.12.nupkg.sha512"
+    },
     "ThriveGmbH.BottomNavigationBar.XF/1.0.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-CAxjraz7v27mWxrChvLLggDRq5Icf3OA0IL3lpGY+rfUGH488kZzBB3WJmfbgh7q5yfBbva51Iuv4tFleepV2A==",
       "path": "thrivegmbh.bottomnavigationbar.xf/1.0.2",
       "hashPath": "thrivegmbh.bottomnavigationbar.xf.1.0.2.nupkg.sha512"
+    },
+    "Xam.Plugin.Media/4.0.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PxL0vcTXpS79l2KgtaJBShcPVMRK2HC5J08vG6hKTC7hk5+3RjgFrdX0N6Gd4oF8pxVxV2ia7rhYnjxRCMWZtw==",
+      "path": "xam.plugin.media/4.0.1.5",
+      "hashPath": "xam.plugin.media.4.0.1.5.nupkg.sha512"
     },
     "Xamarin.Forms/3.4.0.1008975": {
       "type": "package",

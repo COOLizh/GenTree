@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage Title="Settings" Icon="gearwheel.png" BackgroundColor="WhiteSmoke" xamarinforms:BottomBarPageExtensions.TabColor="#20b2aa"
+<ContentPage Title="{translation:Translate SettingsMes}" Icon="gearwheel.png" BackgroundColor="WhiteSmoke" xamarinforms:BottomBarPageExtensions.TabColor="#20b2aa"
     xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:xamarinforms="clr-namespace:BottomBar.XamarinForms;assembly=BottomBar.XamarinForms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -24,19 +24,24 @@
         <TableView>
             <TableView.Root>
                 <TableRoot>
-                    <TableSection Title="Personal information">
-                        <!--<ViewCell />-->
-                        
-                    </TableSection>
-                    <TableSection Title="Application settings">
-                        <SwitchCell Text="{translation:Translate LanguageMes}"/>
+                    <TableSection Title="{translation:Translate PersInfoMes}">
+                        <ViewCell>
+                            <StackLayout>
+                                <!--<Image Source="person.png"/>-->
+                                <Label Text="Kulizhenko Vladislav"/>
+                            </StackLayout>
+                        </ViewCell>
                     </TableSection>
                 </TableRoot>
             </TableView.Root>
         </TableView>
 
+
         <Button
-            Text="Change information"/>
+            Text="{translation:Translate AddPhotoMes}"
+            Clicked="TakePhotoButton_OnCicked"/>
+        <Button
+            Text="{translation:Translate ChangeInfoMes}"/>
     </StackLayout>
 
 </ContentPage>

@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GenTree.ViewModels"
+             xmlns:translation="clr-namespace:GenTree.Helpers"
              x:Class="GenTree.Views.PersonPage"
              BackgroundColor="WhiteSmoke">
 
@@ -9,15 +10,15 @@
         <!--<ActivityIndicator Color="Blue" IsRunning="true" />-->
         
         <StackLayout x:Name="personStack">
-            <Label Text="Name" />
+            <Label Text="{translation:Translate NameMes}" />
             <Entry Text="{Binding Name}" FontSize="Medium" />
-            <Label Text="Surname" />
+            <Label Text="{translation:Translate SurnameMes}" />
             <Entry Text="{Binding Surname}" FontSize="Medium" />
         </StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-            <Button Text="Add" Command="{Binding ListViewModel.SavePersonCommand}" CommandParameter="{Binding}" />
-            <Button Text="Delete" Command="{Binding ListViewModel.DeletePersonCommand}" CommandParameter="{Binding}" />
-            <Button Text="Back" Command="{Binding Path=ListViewModel.BackCommand}" />
+            <Button Text="{translation:Translate AddMes}" Command="{Binding ListViewModel.SavePersonCommand}" CommandParameter="{Binding}" />
+            <Button Text="{translation:Translate DeletMes}" Command="{Binding ListViewModel.DeletePersonCommand}" CommandParameter="{Binding}" />
+            <Button Text="{translation:Translate BackMes}" Command="{Binding Path=ListViewModel.BackCommand}" />
         </StackLayout>
     </StackLayout>
 </ContentPage>

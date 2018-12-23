@@ -10,8 +10,11 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\asse
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Mono.Android.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\mscorlib.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Newtonsoft.Json.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Plugin.CurrentActivity.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Plugin.Media.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Plugin.Multilingual.Abstractions.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Plugin.Multilingual.dll
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Plugin.Permissions.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.Core.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\System.Xml.dll

@@ -117,7 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddMes" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="AddPhotoMes" xml:space="preserve">
+    <value>Добавить фото</value>
+  </data>
+  <data name="BackMes" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="ChangeInfoMes" xml:space="preserve">
+    <value>Изменить информацию</value>
+  </data>
+  <data name="DeleteMes" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="DoBMes" xml:space="preserve">
+    <value>Дата рождения</value>
+  </data>
+  <data name="GenderMes" xml:space="preserve">
+    <value>Пол</value>
+  </data>
   <data name="LanguageMes" xml:space="preserve">
     <value>Язык</value>
+  </data>
+  <data name="NameMes" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="PersInfoMes" xml:space="preserve">
+    <value>Персональная информация</value>
+  </data>
+  <data name="RelativesMes" xml:space="preserve">
+    <value>Родственники</value>
+  </data>
+  <data name="SettingsMes" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="SurnameMes" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="TreeMes" xml:space="preserve">
+    <value>Дерево</value>
   </data>
 </root>

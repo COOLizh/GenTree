@@ -4,6 +4,7 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\bin\Debug\com.companyname
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\bin\Debug\com.companyname-Signed.apk
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\bin\Debug\GenTree.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\bin\Debug\GenTree.pdb
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\bin\Debug\ru\GenTree.resources.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\GenTree.Android.nuget.stamp
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\GenTree.Android.csprojAssemblyReference.cache
@@ -41,6 +42,7 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\res\mipmap-x
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\res\mipmap-xxhdpi\logo.png
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\res\mipmap-xxxhdpi\logo.png
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\res\drawable\person.png
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\res\drawable\splashscreen.jpg
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\R.cs.flag
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\R.txt
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\uploadflags.txt
@@ -124,8 +126,6 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\asse
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
-C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\bin\Debug\ru\GenTree.resources.dll
-C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\res\drawable\splashscreen.jpg
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\bin\Debug\GenTree.Android.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\linksrc\GenTree.Android.dll.mdb
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree.Android\obj\Debug\81\linksrc\Lottie.Android.dll.mdb

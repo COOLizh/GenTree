@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage Title="Tree" Icon="tree.png" BackgroundColor="WhiteSmoke"
+<ContentPage Title="{translation:Translate TreeMes}" Icon="tree.png" BackgroundColor="WhiteSmoke"
     xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             xmlns:translation="clr-namespace:GenTree.Helpers"
              x:Class="GenTree.Views.Tree">
     <ContentPage.Content>
         <StackLayout>
@@ -13,8 +14,8 @@
 	                AutoPlay="True"
                     HeightRequest="450"
                     WidthRequest="450"/>
-                
-                <Label Text="Tree!"
+
+            <Label Text="{translation:Translate TreeMes}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
