@@ -15,7 +15,7 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\Tr
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.csproj.CoreCompileInputs.cache
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.AssemblyInfoInputs.cache
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.AssemblyInfo.cs
-C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\ru\GenTree.resources.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.pdb
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\XamlC.stamp

@@ -8,6 +8,10 @@ using Xamarin.Forms;
 using GenTree.Views;
 using System.Linq;
 using GenTree.Models;
+using System.Runtime.Serialization.Json;
+using System.IO;
+using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace GenTree.ViewModels
 {
@@ -21,7 +25,7 @@ namespace GenTree.ViewModels
             {
                 _persons = value;
                 OnPropertyChanged("Persons");
-                OnPropertyChanged("ListViewModel");
+                //OnPropertyChanged("ListViewModel");
             }
         }
 
@@ -33,6 +37,8 @@ namespace GenTree.ViewModels
         public ICommand BackCommand { protected set; get; }
         public ICommand SearchPersonsCommand { protected set; get; }
         MainViewModel selectedPerson;
+
+        string json;
 
         public INavigation Navigation { get; set; }
 
@@ -82,6 +88,8 @@ namespace GenTree.ViewModels
             if (person != null && person.IsValid)
             {
                 Persons.Add(person);
+
+                json += JsonConvert.SerializeObject(person.returnPerson(), Formatting.Indented);
             }
             Back();
         }

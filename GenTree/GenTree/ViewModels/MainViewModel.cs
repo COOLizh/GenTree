@@ -32,6 +32,12 @@ namespace GenTree.ViewModels
             }
         }
 
+        //простите :(
+        public Person returnPerson()
+        {
+            return person;
+        }
+
         public bool IsValid
         {
             get
