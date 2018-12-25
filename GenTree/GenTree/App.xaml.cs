@@ -5,6 +5,10 @@ using GenTree.Views;
 using BottomBar;
 using BottomBar.XamarinForms;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using GenTree.Models;
+using System.Collections.Generic;
+using Plugin.Settings;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace GenTree

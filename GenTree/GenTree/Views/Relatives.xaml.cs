@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Newtonsoft.Json;
+using GenTree.Models;
+using Plugin.Settings;
 
 namespace GenTree.Views
 {
@@ -17,6 +20,8 @@ namespace GenTree.Views
 		{
 			InitializeComponent ();
             BindingContext = new PersonsListViewModel(){ Navigation = this.Navigation};
-		}
+            personsList.ItemsSource= JsonConvert.DeserializeObject<List<Person>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
+
+        }
     }
 }

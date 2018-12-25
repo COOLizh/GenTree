@@ -120,6 +120,8 @@ class MonoPackageManager_Resources {
 		"Plugin.Multilingual.Abstractions.dll",
 		"Plugin.Multilingual.dll",
 		"Plugin.Permissions.dll",
+		"Plugin.Settings.Abstractions.dll",
+		"Plugin.Settings.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",

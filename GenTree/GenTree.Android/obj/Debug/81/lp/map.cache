@@ -11,6 +11,8 @@ Plugin.Media
 Plugin.Multilingual.Abstractions
 Plugin.Multilingual
 Plugin.Permissions
+Plugin.Settings.Abstractions
+Plugin.Settings
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common

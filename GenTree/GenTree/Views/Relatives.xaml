@@ -18,7 +18,7 @@
                    SearchCommandParameter="{Binding}"/>
 
         <Button Text="{translation:Translate AddMes}" Command="{Binding CreatePersonCommand}" />
-        <ListView x:Name="booksList" ItemsSource="{Binding Persons}"
+        <ListView x:Name="personsList" ItemsSource="{Binding Persons}"
               SelectedItem="{Binding SelectedPerson, Mode=TwoWay}" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>

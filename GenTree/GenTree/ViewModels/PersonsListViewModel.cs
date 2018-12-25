@@ -12,12 +12,15 @@ using System.Runtime.Serialization.Json;
 using System.IO;
 using Newtonsoft.Json;
 using System.Diagnostics;
+using Plugin.Settings;
 
 namespace GenTree.ViewModels
 {
      public class PersonsListViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<MainViewModel> _persons;
+        private List<Person> rela = new List<Person>();
+
         public ObservableCollection<MainViewModel> Persons
         {
             get => _persons;
@@ -89,7 +92,10 @@ namespace GenTree.ViewModels
             {
                 Persons.Add(person);
 
-                json += JsonConvert.SerializeObject(person.returnPerson(), Formatting.Indented);
+                rela.Add(person.returnPerson());
+                //json = JsonConvert.SerializeObject(rela, Formatting.Indented);
+                CrossSettings.Current.AddOrUpdateValue("Relatives", JsonConvert.SerializeObject(rela, Formatting.Indented));
+                JsonConvert.DeserializeObject<List<Person>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
             }
             Back();
         }
