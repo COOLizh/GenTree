@@ -18,3 +18,4 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\XamlC.st
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\ru\GenTree.resources.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.pdb
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.csprojAssemblyReference.cache

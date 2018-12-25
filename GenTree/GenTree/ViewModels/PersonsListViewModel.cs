@@ -28,7 +28,6 @@ namespace GenTree.ViewModels
             {
                 _persons = value;
                 OnPropertyChanged("Persons");
-                //OnPropertyChanged("ListViewModel");
             }
         }
 
@@ -41,7 +40,6 @@ namespace GenTree.ViewModels
         public ICommand SearchPersonsCommand { protected set; get; }
         MainViewModel selectedPerson;
 
-        string json;
 
         public INavigation Navigation { get; set; }
 
@@ -49,7 +47,8 @@ namespace GenTree.ViewModels
 
         public PersonsListViewModel()
         {
-            Persons = new ObservableCollection<MainViewModel>();
+            Persons = JsonConvert.DeserializeObject<ObservableCollection<MainViewModel>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
+            rela = JsonConvert.DeserializeObject<List<Person>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
             CreatePersonCommand = new Command(CreatePerson);
             DeletePersonCommand = new Command(DeletePerson);
             SavePersonCommand = new Command(SavePerson);
@@ -93,9 +92,7 @@ namespace GenTree.ViewModels
                 Persons.Add(person);
 
                 rela.Add(person.returnPerson());
-                //json = JsonConvert.SerializeObject(rela, Formatting.Indented);
                 CrossSettings.Current.AddOrUpdateValue("Relatives", JsonConvert.SerializeObject(rela, Formatting.Indented));
-                JsonConvert.DeserializeObject<List<Person>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
             }
             Back();
         }
