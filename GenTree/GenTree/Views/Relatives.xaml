@@ -18,9 +18,8 @@
                    SearchCommandParameter="{Binding}"/>
 
         <Button Text="{translation:Translate AddMes}" Command="{Binding CreatePersonCommand}" />
-        <!--<Button Text="{translation:Translate DeleteMes}" Command="{Binding ListViewModel.DeletePersonCommand}" />-->
         <ListView x:Name="personsList" ItemsSource="{Binding Persons}" ItemTapped="PersonsList_ItemTapped"
-              SelectedItem="{Binding SelectedPerson, Mode=TwoWay}" HasUnevenRows="True">
+              SelectedItem="{Binding ListViewModel.SelectedPersonCommand}"  HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

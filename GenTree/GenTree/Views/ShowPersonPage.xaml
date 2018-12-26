@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GenTree.Views.ShowPersonPage"
              xmlns:translation="clr-namespace:GenTree.Helpers">
-    
+
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
@@ -16,7 +16,7 @@
                 <Label x:Name="NameSurname" 
                     HorizontalOptions="CenterAndExpand"
                     FontSize="Large"/>
-                <Label x:Name="DobId" TextColor="White"
+                <Label x:Name="DobId"
                     HorizontalOptions="CenterAndExpand"
                     FontSize="Medium"/>
                 <BoxView  x:Name="Separator2" BackgroundColor="LightSeaGreen" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand"/>

@@ -14,6 +14,10 @@
             <Entry Text="{Binding Name}" FontSize="Medium" />
             <Label Text="{translation:Translate SurnameMes}" />
             <Entry Text="{Binding Surname}" FontSize="Medium" />
+            <Label Text="{translation:Translate DoBMes}" />
+            <Entry Text="{Binding DoB}" FontSize="Medium" />
+            <Label Text="id" />
+            <Entry Text="{Binding Id}" FontSize="Medium" />
         </StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
             <Button Text="{translation:Translate AddMes}" Command="{Binding ListViewModel.SavePersonCommand}" CommandParameter="{Binding}" />

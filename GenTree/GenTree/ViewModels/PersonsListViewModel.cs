@@ -48,6 +48,8 @@ namespace GenTree.ViewModels
 
         public PersonsListViewModel()
         {
+            //Persons = new ObservableCollection<MainViewModel>();
+            //rela = new List<Person>();
             Persons = JsonConvert.DeserializeObject<ObservableCollection<MainViewModel>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
             rela = JsonConvert.DeserializeObject<List<Person>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
             CreatePersonCommand = new Command(CreatePerson);
@@ -103,7 +105,7 @@ namespace GenTree.ViewModels
             }
             Back();
         }
-        private void DeletePerson(object personObject)
+        public void DeletePerson(object personObject)
         {
             MainViewModel person = personObject as MainViewModel;
             if (person != null)

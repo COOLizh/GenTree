@@ -10,6 +10,7 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\Ma
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\PersonPage.xaml.g.cs
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\Relatives.xaml.g.cs
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\Settings.xaml.g.cs
+C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\ShowPersonPage.xaml.g.cs
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\Tree.xaml.g.cs
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.csproj.CoreCompileInputs.cache
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.AssemblyInfoInputs.cache
@@ -18,5 +19,3 @@ C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\XamlC.st
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\ru\GenTree.resources.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.dll
 C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.pdb
-C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\GenTree.csprojAssemblyReference.cache
-C:\Users\alien\Desktop\GenTree\GenTree\GenTree\obj\Debug\netstandard2.0\Views\ShowPersonPage.xaml.g.cs

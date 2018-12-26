@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace GenTree.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Tree : ContentPage
 	{
 		public Tree ()
 		{
 			InitializeComponent ();
-		}
+        }
 	}
 }

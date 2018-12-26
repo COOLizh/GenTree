@@ -8,7 +8,8 @@
              x:Class="GenTree.Views.Tree">
     <ContentPage.Content>
         <StackLayout>
-            <forms:AnimationView
+            
+            <!--<forms:AnimationView
 	                x:Name="animationViewProfile" 
 	                Animation="tree.json" 
 	                Loop="True" 
@@ -18,7 +19,12 @@
 
             <Label Text="{translation:Translate TreeMes}"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" />-->
+
+
+            
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

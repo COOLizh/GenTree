@@ -30,7 +30,7 @@ namespace GenTree.Views
         private void PersonsList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var a = e.Item as MainViewModel;
-            Navigation.PushAsync(new ShowPersonPage(a.Name, a.Surname, a.DoB, a.Id));
+            Navigation.PushAsync(new ShowPersonPage(a.Name, a.Surname, a.DoB, a.Id, a));
         }
 
         //private void MainSearchBar_TextChanged(object sender, TextChangedEventArgs e)
