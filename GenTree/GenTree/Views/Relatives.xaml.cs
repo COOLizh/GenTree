@@ -10,17 +10,31 @@ using Xamarin.Forms.Xaml;
 using Newtonsoft.Json;
 using GenTree.Models;
 using Plugin.Settings;
+using System.Collections.ObjectModel;
 
 namespace GenTree.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Relatives : ContentPage
 	{
-		public Relatives ()
+        //ObservableCollection<MainViewModel> Persons = new ObservableCollection<MainViewModel>();
+
+
+        public Relatives ()
 		{
 			InitializeComponent ();
             BindingContext = new PersonsListViewModel(){ Navigation = this.Navigation};
-            //personsList.ItemsSource= JsonConvert.DeserializeObject<List<Person>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
+            //Persons = new ObservableCollection<MainViewModel>(personsList.ItemsSource as ObservableCollection<MainViewModel>);
         }
+
+        //private void MainSearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    personsList.ItemsSource = new ObservableCollection<MainViewModel>(Persons.Where(p => p.Name.ToLower().Contains(e.NewTextValue.ToLower())));
+        //}
+
+        //private void Button_Clicked(object sender, EventArgs e)
+        //{
+        //    Navigation.PushAsync(new PersonPage(new MainViewModel()));
+        //}
     }
 }

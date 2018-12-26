@@ -31,6 +31,8 @@ namespace GenTree.ViewModels
             }
         }
 
+        public ObservableCollection<MainViewModel> Temp;
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public ICommand CreatePersonCommand { protected set; get; }
@@ -49,6 +51,7 @@ namespace GenTree.ViewModels
         {
             Persons = JsonConvert.DeserializeObject<ObservableCollection<MainViewModel>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
             rela = JsonConvert.DeserializeObject<List<Person>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
+            Temp = new ObservableCollection<MainViewModel>(Persons);
             CreatePersonCommand = new Command(CreatePerson);
             DeletePersonCommand = new Command(DeletePerson);
             SavePersonCommand = new Command(SavePerson);
@@ -108,8 +111,10 @@ namespace GenTree.ViewModels
 
         private void SearchPersons()
         {
-            var tempRecords = Persons.Where(p => p.Name.Contains(MySearchText));
-            Persons = new ObservableCollection<MainViewModel>(tempRecords);
+            Persons = new ObservableCollection<MainViewModel>(Temp.Where(p => p.Name.ToLower().Contains(MySearchText.ToLower())));
+            Debug.WriteLine(MySearchText);
+
+            //var tempRecords = Persons.Where(p => p.Name.Contains(MySearchText));
         }
     }
 }
