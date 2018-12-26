@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GenTree.Views.ShowPersonPage"
+             xmlns:translation="clr-namespace:GenTree.Helpers">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Image Source="person.png" HeightRequest="150" WidthRequest="150"/>
+            </StackLayout>
+
+            <BoxView  x:Name="Separator1" BackgroundColor="LightSeaGreen" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+
+            <StackLayout>
+                <Label x:Name="NameSurname" 
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Large"/>
+                <Label x:Name="DobId" TextColor="White"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Medium"/>
+                <BoxView  x:Name="Separator2" BackgroundColor="LightSeaGreen" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+                <Button Text="{translation:Translate DeleteMes}" Command="{Binding ListViewModel.DeletePersonCommand}" CommandParameter="{Binding}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -20,11 +20,17 @@ namespace GenTree.Views
         //ObservableCollection<MainViewModel> Persons = new ObservableCollection<MainViewModel>();
 
 
-        public Relatives ()
-		{
-			InitializeComponent ();
-            BindingContext = new PersonsListViewModel(){ Navigation = this.Navigation};
-            //Persons = new ObservableCollection<MainViewModel>(personsList.ItemsSource as ObservableCollection<MainViewModel>);
+        public Relatives()
+        {
+            InitializeComponent();
+            BindingContext = new PersonsListViewModel() { Navigation = this.Navigation };
+            //personsList.ItemsSource= JsonConvert.DeserializeObject<List<Person>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
+        }
+
+        private void PersonsList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var a = e.Item as MainViewModel;
+            Navigation.PushAsync(new ShowPersonPage(a.Name, a.Surname, a.DoB, a.Id));
         }
 
         //private void MainSearchBar_TextChanged(object sender, TextChangedEventArgs e)

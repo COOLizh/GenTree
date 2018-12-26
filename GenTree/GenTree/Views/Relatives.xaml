@@ -13,21 +13,22 @@
 
     <StackLayout>
         <SearchBar x:Name="MainSearchBar"
-                   />
+                   Text="{Binding MySearchText}"
+                   SearchCommand="{Binding ListViewModel.SearchPersons}"
+                   SearchCommandParameter="{Binding}"/>
 
-        <Button Text="{translation:Translate AddMes}" Command="{Binding CreatePersonsCommand}"/>
-        <Button Text="{translation:Translate DeleteMes}" Command="{Binding DeletePersonCommand}"/>
-            <ListView x:Name="personsList" ItemsSource="{Binding Persons}"
+        <Button Text="{translation:Translate AddMes}" Command="{Binding CreatePersonCommand}" />
+        <!--<Button Text="{translation:Translate DeleteMes}" Command="{Binding ListViewModel.DeletePersonCommand}" />-->
+        <ListView x:Name="personsList" ItemsSource="{Binding Persons}" ItemTapped="PersonsList_ItemTapped"
               SelectedItem="{Binding SelectedPerson, Mode=TwoWay}" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
-                            <StackLayout>
-                                <Label Text="{Binding Name}"  FontSize="Medium" />
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="person.png" HeightRequest="50" WidthRequest="50"/>
+                                <Label Text="{Binding Name}" FontSize="Medium" />
                                 <Label Text="{Binding Surname}" FontSize="Medium" />
-                                <Label Text="{Binding Gender}" FontSize="Small" />
-                                <Label Text="{Binding Id}" FontSize="Small" />
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>

@@ -16,7 +16,7 @@ using Plugin.Settings;
 
 namespace GenTree.ViewModels
 {
-     public class PersonsListViewModel : INotifyPropertyChanged
+    public class PersonsListViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<MainViewModel> _persons;
         private List<Person> rela = new List<Person>();
@@ -31,13 +31,12 @@ namespace GenTree.ViewModels
             }
         }
 
-        public ObservableCollection<MainViewModel> Temp;
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         public ICommand CreatePersonCommand { protected set; get; }
         public ICommand DeletePersonCommand { protected set; get; }
         public ICommand SavePersonCommand { protected set; get; }
+        public ICommand ShowPersonCommand { protected set; get; }
         public ICommand BackCommand { protected set; get; }
         public ICommand SearchPersonsCommand { protected set; get; }
         MainViewModel selectedPerson;
@@ -51,8 +50,8 @@ namespace GenTree.ViewModels
         {
             Persons = JsonConvert.DeserializeObject<ObservableCollection<MainViewModel>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
             rela = JsonConvert.DeserializeObject<List<Person>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
-            Temp = new ObservableCollection<MainViewModel>(Persons);
             CreatePersonCommand = new Command(CreatePerson);
+            ShowPersonCommand = new Command(ShowPerson);
             DeletePersonCommand = new Command(DeletePerson);
             SavePersonCommand = new Command(SavePerson);
             BackCommand = new Command(Back);
@@ -83,6 +82,11 @@ namespace GenTree.ViewModels
         {
             Navigation.PushAsync(new PersonPage(new MainViewModel() { ListViewModel = this }));
         }
+
+        private void ShowPerson()
+        {
+            //Navigation.PushAsync(new ShowPersonPage());
+        }
         private void Back()
         {
             Navigation.PopAsync();
@@ -104,17 +108,18 @@ namespace GenTree.ViewModels
             MainViewModel person = personObject as MainViewModel;
             if (person != null)
             {
-               Persons.Remove(person);
+                Persons.Remove(person);
+
+                rela.Remove(person.returnPerson());
+                CrossSettings.Current.AddOrUpdateValue("Relatives", JsonConvert.SerializeObject(rela, Formatting.Indented));
             }
             Back();
         }
 
         private void SearchPersons()
         {
-            Persons = new ObservableCollection<MainViewModel>(Temp.Where(p => p.Name.ToLower().Contains(MySearchText.ToLower())));
-            Debug.WriteLine(MySearchText);
-
-            //var tempRecords = Persons.Where(p => p.Name.Contains(MySearchText));
+            var tempRecords = Persons.Where(p => p.Name.Contains(MySearchText));
+            Persons = new ObservableCollection<MainViewModel>(tempRecords);
         }
     }
 }
