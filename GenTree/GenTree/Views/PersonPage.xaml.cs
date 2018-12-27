@@ -20,5 +20,10 @@ namespace GenTree.Views
             ViewModel = vm;
             this.BindingContext = ViewModel;
         }
+
+        private void Picker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            id.Text = picker.Items[picker.SelectedIndex];
+        }
     }
 }

@@ -13,12 +13,12 @@
             <BoxView  x:Name="Separator1" BackgroundColor="LightSeaGreen" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
 
             <StackLayout>
-                <Label x:Name="NameSurname" 
-                    HorizontalOptions="CenterAndExpand"
+                <Label x:Name="NameSurname" TextColor="Black"
+                    HorizontalOptions="Start"
                     FontSize="Large"/>
                 <Label x:Name="DobId"
-                    HorizontalOptions="CenterAndExpand"
-                    FontSize="Medium"/>
+                    HorizontalOptions="Start" TextColor="Black"
+                    FontSize="Large"/>
                 <BoxView  x:Name="Separator2" BackgroundColor="LightSeaGreen" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
                 <Button Text="{translation:Translate DeleteMes}" Command="{Binding ListViewModel.DeletePersonCommand}" CommandParameter="{Binding}"/>
             </StackLayout>

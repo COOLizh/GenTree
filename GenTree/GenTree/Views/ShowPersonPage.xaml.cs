@@ -19,8 +19,8 @@ namespace GenTree.Views
 		{
 
 			InitializeComponent ();
-            NameSurname.Text = "Name : " + name + " Surname : " + surname;
-            DobId.Text = "Birthday : " + dob + " Kind of relative : " + id;
+            NameSurname.Text = "Name :                " + name + "\nSurname :           " + surname;
+            DobId.Text = "Birthday :             " + dob + "\nKind of relative : " + id;
             vm.Name = name;
             vm.Surname = surname;
             vm.DoB = dob;

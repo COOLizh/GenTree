@@ -16,8 +16,21 @@
             <Entry Text="{Binding Surname}" FontSize="Medium" />
             <Label Text="{translation:Translate DoBMes}" />
             <Entry Text="{Binding DoB}" FontSize="Medium" />
+            <Label Text="Kind of relative : " />
+            <Picker x:Name="picker" SelectedIndexChanged="Picker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Wife</x:String>
+                    <x:String>Husband</x:String>
+                    <x:String>Mother</x:String>
+                    <x:String>Father</x:String>
+                    <x:String>Child</x:String>
+                    <x:String>Sister</x:String>
+                    <x:String>Brother</x:String>
+                    <!--<x:String>Cousin</x:String>-->
+                </Picker.Items>
+            </Picker>
             <Label Text="id" />
-            <Entry Text="{Binding Id}" FontSize="Medium" />
+            <Entry x:Name="id" Text="{Binding Id}" FontSize="Medium" IsEnabled="False"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
             <Button Text="{translation:Translate AddMes}" Command="{Binding ListViewModel.SavePersonCommand}" CommandParameter="{Binding}" />
