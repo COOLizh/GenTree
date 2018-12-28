@@ -13,6 +13,7 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Diagnostics;
 using Plugin.Settings;
+using GenTree.Service;
 
 namespace GenTree.ViewModels
 {
@@ -39,6 +40,7 @@ namespace GenTree.ViewModels
         public ICommand ShowPersonCommand { protected set; get; }
         public ICommand BackCommand { protected set; get; }
         public ICommand SearchPersonsCommand { protected set; get; }
+        public ICommand ExportDataCommand { protected set; get; }
         MainViewModel selectedPerson;
 
 
@@ -48,9 +50,8 @@ namespace GenTree.ViewModels
 
         public PersonsListViewModel()
         {
-            //Persons = new ObservableCollection<MainViewModel>();
-            //rela = new List<Person>();
             Persons = JsonConvert.DeserializeObject<ObservableCollection<MainViewModel>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
+            //rela = new List<Person>();
             rela = JsonConvert.DeserializeObject<List<Person>>(CrossSettings.Current.GetValueOrDefault("Relatives", ""));
             CreatePersonCommand = new Command(CreatePerson);
             ShowPersonCommand = new Command(ShowPerson);
@@ -58,6 +59,7 @@ namespace GenTree.ViewModels
             SavePersonCommand = new Command(SavePerson);
             BackCommand = new Command(Back);
             SearchPersonsCommand = new Command(SearchPersons);
+            ExportDataCommand = new Command(ExportData);
         }
 
         public MainViewModel SelectedFriend
@@ -116,6 +118,11 @@ namespace GenTree.ViewModels
                 CrossSettings.Current.AddOrUpdateValue("Relatives", JsonConvert.SerializeObject(rela, Formatting.Indented));
             }
             Back();
+        }
+
+        protected void ExportData()
+        {
+            DependencyService.Get<IExportDataService>().ExportData(rela);
         }
 
         private void SearchPersons()

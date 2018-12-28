@@ -9,22 +9,63 @@
     <ContentPage.Content>
         <StackLayout>
             
-            <!--<forms:AnimationView
-	                x:Name="animationViewProfile" 
-	                Animation="tree.json" 
-	                Loop="True" 
-	                AutoPlay="True"
-                    HeightRequest="450"
-                    WidthRequest="450"/>
-
-            <Label Text="{translation:Translate TreeMes}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />-->
-
-
             
-            
-            
+            <ListView x:Name="listParents" SelectionMode="None" Header="Parents">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="person.png" HeightRequest="50" WidthRequest="50"/>
+                                    <Label Text="{Binding Name}" FontSize="Medium" />
+                                    <Label Text="{Binding Surname}" FontSize="Medium" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <BoxView  x:Name="Separator2" BackgroundColor="LightSeaGreen" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+
+            <ListView x:Name="listOthers" SelectionMode="None" Header="Other relatives">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="person.png" HeightRequest="50" WidthRequest="50"/>
+                                    <Label Text="{Binding Name}" FontSize="Medium" />
+                                    <Label Text="{Binding Surname}" FontSize="Medium" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <BoxView  x:Name="Separator3" BackgroundColor="LightSeaGreen" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+
+            <ListView x:Name="listChildrens" SelectionMode="None" Header="Childrens">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="person.png" HeightRequest="50" WidthRequest="50"/>
+                                    <Label Text="{Binding Name}" FontSize="Medium" />
+                                    <Label Text="{Binding Surname}" FontSize="Medium" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <BoxView  x:Name="Separator4" BackgroundColor="LightSeaGreen" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Generate Tree" Clicked="Button_Clicked"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

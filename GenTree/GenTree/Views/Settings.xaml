@@ -26,9 +26,10 @@
                 <TableRoot>
                     <TableSection Title="{translation:Translate PersInfoMes}">
                         <ViewCell>
-                            <StackLayout>
+                            <StackLayout HeightRequest="100">
                                 <!--<Image Source="person.png"/>-->
                                 <Label Text="Kulizhenko Vladislav"/>
+                                <Label Text="24.05.2000 user"/>
                             </StackLayout>
                         </ViewCell>
                     </TableSection>
@@ -37,11 +38,11 @@
         </TableView>
 
 
-        <Button
+        <!--<Button
             Text="{translation:Translate AddPhotoMes}"
-            Clicked="TakePhotoButton_OnCicked"/>
-        <Button
-            Text="{translation:Translate ChangeInfoMes}"/>
+            Clicked="TakePhotoButton_OnCicked"/>-->
+        <!--<Button
+            Text="{translation:Translate ChangeInfoMes}" Clicked="Button_Clicked"/>-->
     </StackLayout>
 
 </ContentPage>

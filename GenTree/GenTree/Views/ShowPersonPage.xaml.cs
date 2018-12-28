@@ -21,10 +21,10 @@ namespace GenTree.Views
 			InitializeComponent ();
             NameSurname.Text = "Name :                " + name + "\nSurname :           " + surname;
             DobId.Text = "Birthday :             " + dob + "\nKind of relative : " + id;
-            vm.Name = name;
-            vm.Surname = surname;
-            vm.DoB = dob;
-            vm.Id = id;
+            //vm.Name = name;
+            //vm.Surname = surname;
+            //vm.DoB = dob;
+            //vm.Id = id;
             ViewModel = vm;
             this.BindingContext = ViewModel;
         }

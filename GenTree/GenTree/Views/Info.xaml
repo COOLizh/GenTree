@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" Icon="icon.png" BackgroundColor="WhiteSmoke" xamarinforms:BottomBarPageExtensions.TabColor="#20b2aa" Title="Info"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xamarinforms="clr-namespace:BottomBar.XamarinForms;assembly=BottomBar.XamarinForms"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="GenTree.Views.Info">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <forms:AnimationView 
+	        x:Name="animationViewProfile" 
+	        Animation="tree.json" 
+	        Loop="True" 
+	        AutoPlay="True"
+            HeightRequest="350"
+            WidthRequest="350"/>
+            
+            
+            <Label Text="github.com/COOLih/GenTree" FontSize="Medium" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

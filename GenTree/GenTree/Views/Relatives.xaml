@@ -12,10 +12,6 @@
     </ContentPage.BindingContext>-->
 
     <StackLayout>
-        <SearchBar x:Name="MainSearchBar"
-                   Text="{Binding MySearchText}"
-                   SearchCommand="{Binding ListViewModel.SearchPersons}"
-                   SearchCommandParameter="{Binding}"/>
 
         <Button Text="{translation:Translate AddMes}" Command="{Binding CreatePersonCommand}" />
         <ListView x:Name="personsList" ItemsSource="{Binding Persons}" ItemTapped="PersonsList_ItemTapped"
@@ -34,6 +30,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button Text="Export in file" Command="{Binding ExportDataCommand}" />
     </StackLayout>
 
 </ContentPage>
