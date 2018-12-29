@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "3333a19c2fb323e9a6cc3f08e06ace67e9890690"
+    "signature": "ac3391b2722c97e5ef5d9d3cfb80b337f8a782e2"
   },
   "compilationOptions": {},
   "targets": {
@@ -13,10 +13,13 @@
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.1",
           "Plugin.Multilingual": "1.0.2",
+          "Plugin.Permissions": "3.0.0.12",
           "ThriveGmbH.BottomNavigationBar.XF": "1.0.2",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xam.Plugins.Settings": "3.1.1",
-          "Xamarin.Forms": "3.4.0.1008975"
+          "Xamarin.Forms": "3.4.0.1008975",
+          "Xamarin.Forms.Theme.Dark": "1.0.0.43-pre1",
+          "Mono.Android": "0.0.0.0"
         },
         "runtime": {
           "GenTree.dll": {}
@@ -39,6 +42,14 @@
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
+      "modernhttpclient/2.4.2": {
+        "runtime": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {
+            "assemblyVersion": "2.4.2.0",
+            "fileVersion": "2.4.2.0"
+          }
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -124,6 +135,50 @@
             "fileVersion": "2.0.0.0"
           }
         }
+      },
+      "Xamarin.Forms.Pages/2.3.0.38-pre2": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1",
+          "Xamarin.Forms": "3.4.0.1008975",
+          "modernhttpclient": "2.4.2"
+        },
+        "runtime": {
+          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Pages.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms.Theme.Base/1.0.0.43-pre1": {
+        "dependencies": {
+          "Xamarin.Forms.Pages": "2.3.0.38-pre2"
+        },
+        "runtime": {
+          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Theme.Base.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms.Theme.Dark/1.0.0.43-pre1": {
+        "dependencies": {
+          "Xamarin.Forms.Pages": "2.3.0.38-pre2",
+          "Xamarin.Forms.Theme.Base": "1.0.0.43-pre1"
+        },
+        "runtime": {
+          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Theme.Dark.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
       }
     }
   },
@@ -146,6 +201,13 @@
       "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "modernhttpclient/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9BX22+C/WFPvPKj2gxtYxn0X0IbbyGqvwzexu38Mr2dzsp1lzKeD5JH67uQGHkhEg122+W8gv9f7WmyykPhb6Q==",
+      "path": "modernhttpclient/2.4.2",
+      "hashPath": "modernhttpclient.2.4.2.nupkg.sha512"
     },
     "NETStandard.Library/2.0.3": {
       "type": "package",
@@ -202,6 +264,32 @@
       "sha512": "sha512-036/h8HtzRFgTrfhY57IeHoYRsPTO2XTA6uUFdmZzw2QR1sdszfofhI9HrCJTRx6fCzmjPg5Cxk5chYrjKarNw==",
       "path": "xamarin.forms/3.4.0.1008975",
       "hashPath": "xamarin.forms.3.4.0.1008975.nupkg.sha512"
+    },
+    "Xamarin.Forms.Pages/2.3.0.38-pre2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3tHkcC35t/ee3zrnyUJKQlbe1pFuLef7TIFU5Wi6HREz6WeKtpOCZwhEOark6y1vjMztWX/oDcF+tynKp1o7JA==",
+      "path": "xamarin.forms.pages/2.3.0.38-pre2",
+      "hashPath": "xamarin.forms.pages.2.3.0.38-pre2.nupkg.sha512"
+    },
+    "Xamarin.Forms.Theme.Base/1.0.0.43-pre1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eeqwmSB/D1uHGEszSXKbSErix9vICV8ZrKVNQGH4yJymBtdF+zfEzJ8ESzZVHhNDGLDgbapAv92rIG60AUdRSg==",
+      "path": "xamarin.forms.theme.base/1.0.0.43-pre1",
+      "hashPath": "xamarin.forms.theme.base.1.0.0.43-pre1.nupkg.sha512"
+    },
+    "Xamarin.Forms.Theme.Dark/1.0.0.43-pre1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Skm/FTWOQEBpJWizCUXhN/qBqITitiilx2dGl54Nt+jye/cTCe6CxEdFRe6pdJQYq6IZT2H+Avu4rWGdpi1Ijw==",
+      "path": "xamarin.forms.theme.dark/1.0.0.43-pre1",
+      "hashPath": "xamarin.forms.theme.dark.1.0.0.43-pre1.nupkg.sha512"
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

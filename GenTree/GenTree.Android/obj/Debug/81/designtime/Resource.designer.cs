@@ -3174,6 +3174,7 @@ namespace GenTree.Droid
 			global::BottomNavigationBar.Resource.Styleable.ViewStubCompat_android_id = global::GenTree.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::BottomNavigationBar.Resource.Styleable.ViewStubCompat_android_inflatedId = global::GenTree.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::BottomNavigationBar.Resource.Styleable.ViewStubCompat_android_layout = global::GenTree.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::ModernHttpClient.Resource.String.library_name = global::GenTree.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::GenTree.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -5605,7 +5606,7 @@ namespace GenTree.Droid
 			public const int gearwheel = 2130771971;
 			
 			// aapt resource value: 0x7F010004
-			public const int green-earth = 2130771972;
+			public const int green_earth = 2130771972;
 			
 			// aapt resource value: 0x7F010005
 			public const int icon = 2130771973;
@@ -7266,6 +7267,9 @@ namespace GenTree.Droid
 			// aapt resource value: 0x7F15001E
 			public const int appbar_scrolling_view_behavior = 2132082718;
 			
+			// aapt resource value: 0x7F080065
+			public const int ApplicationName = 2131230821;
+			
 			// aapt resource value: 0x7F080003
 			public const int app_name = 2131230723;
 			
@@ -7274,6 +7278,9 @@ namespace GenTree.Droid
 			
 			// aapt resource value: 0x7F150020
 			public const int character_counter_pattern = 2132082720;
+			
+			// aapt resource value: 0x7F080064
+			public const int Hello = 2131230820;
 			
 			// aapt resource value: 0x7F080002
 			public const int library_name = 2131230722;

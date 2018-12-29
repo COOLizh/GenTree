@@ -23,6 +23,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "modernhttpclient/2.4.2": {
+        "type": "package",
+        "compile": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -121,6 +130,45 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
+      },
+      "Xamarin.Forms.Pages/2.3.0.38-pre2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4",
+          "Xamarin.Forms": "2.3.0.38-pre2",
+          "modernhttpclient": "2.4.2"
+        },
+        "compile": {
+          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Pages.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Pages.dll": {}
+        }
+      },
+      "Xamarin.Forms.Theme.Base/1.0.0.43-pre1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms.Pages": "2.3.0.34-pre1"
+        },
+        "compile": {
+          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Theme.Base.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Theme.Base.dll": {}
+        }
+      },
+      "Xamarin.Forms.Theme.Dark/1.0.0.43-pre1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms.Pages": "2.3.0.38-pre2",
+          "Xamarin.Forms.Theme.Base": "1.0.0.43-pre1"
+        },
+        "compile": {
+          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Theme.Dark.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Theme.Dark.dll": {}
+        }
       }
     }
   },
@@ -161,6 +209,28 @@
         "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json"
+      ]
+    },
+    "modernhttpclient/2.4.2": {
+      "sha512": "9BX22+C/WFPvPKj2gxtYxn0X0IbbyGqvwzexu38Mr2dzsp1lzKeD5JH67uQGHkhEg122+W8gv9f7WmyykPhb6Q==",
+      "type": "package",
+      "path": "modernhttpclient/2.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/ModernHttpClient-2.4.1.zip",
+        "lib/MonoAndroid/ModernHttpClient.dll",
+        "lib/MonoAndroid/ModernHttpClient.dll.mdb",
+        "lib/MonoAndroid/OkHttp.dll",
+        "lib/MonoTouch/ModernHttpClient.dll",
+        "lib/MonoTouch/ModernHttpClient.dll.mdb",
+        "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll",
+        "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll.mdb",
+        "lib/Xamarin.iOS10/ModernHttpClient.dll",
+        "lib/Xamarin.iOS10/ModernHttpClient.dll.mdb",
+        "lib/modernhttpclient.2.4.1.nupkg",
+        "modernhttpclient.2.4.2.nupkg.sha512",
+        "modernhttpclient.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -663,6 +733,55 @@
         "xamarin.forms.3.4.0.1008975.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Xamarin.Forms.Pages/2.3.0.38-pre2": {
+      "sha512": "3tHkcC35t/ee3zrnyUJKQlbe1pFuLef7TIFU5Wi6HREz6WeKtpOCZwhEOark6y1vjMztWX/oDcF+tynKp1o7JA==",
+      "type": "package",
+      "path": "xamarin.forms.pages/2.3.0.38-pre2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Xamarin.Forms.Pages.dll",
+        "lib/MonoTouch10/Xamarin.Forms.Pages.dll",
+        "lib/WP80/Xamarin.Forms.Pages.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Pages.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Pages.dll",
+        "lib/uap10.0/Xamarin.Forms.Pages.dll",
+        "lib/win81/Xamarin.Forms.Pages.dll",
+        "lib/wpa81/Xamarin.Forms.Pages.dll",
+        "xamarin.forms.pages.2.3.0.38-pre2.nupkg.sha512",
+        "xamarin.forms.pages.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Theme.Base/1.0.0.43-pre1": {
+      "sha512": "eeqwmSB/D1uHGEszSXKbSErix9vICV8ZrKVNQGH4yJymBtdF+zfEzJ8ESzZVHhNDGLDgbapAv92rIG60AUdRSg==",
+      "type": "package",
+      "path": "xamarin.forms.theme.base/1.0.0.43-pre1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Xamarin.Forms.Theme.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Theme.Base.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Theme.Base.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Theme.iOS.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Theme.Base.dll",
+        "xamarin.forms.theme.base.1.0.0.43-pre1.nupkg.sha512",
+        "xamarin.forms.theme.base.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Theme.Dark/1.0.0.43-pre1": {
+      "sha512": "Skm/FTWOQEBpJWizCUXhN/qBqITitiilx2dGl54Nt+jye/cTCe6CxEdFRe6pdJQYq6IZT2H+Avu4rWGdpi1Ijw==",
+      "type": "package",
+      "path": "xamarin.forms.theme.dark/1.0.0.43-pre1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Xamarin.Forms.Theme.Dark.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Theme.Dark.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Theme.Dark.dll",
+        "xamarin.forms.theme.dark.1.0.0.43-pre1.nupkg.sha512",
+        "xamarin.forms.theme.dark.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -671,10 +790,12 @@
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.1",
       "Plugin.Multilingual >= 1.0.2",
+      "Plugin.Permissions >= 3.0.0.12",
       "ThriveGmbH.BottomNavigationBar.XF >= 1.0.2",
       "Xam.Plugin.Media >= 4.0.1.5",
       "Xam.Plugins.Settings >= 3.1.1",
-      "Xamarin.Forms >= 3.4.0.1008975"
+      "Xamarin.Forms >= 3.4.0.1008975",
+      "Xamarin.Forms.Theme.Dark >= 1.0.0.43-pre1"
     ]
   },
   "packageFolders": {
@@ -736,6 +857,10 @@
             "target": "Package",
             "version": "[1.0.2, )"
           },
+          "Plugin.Permissions": {
+            "target": "Package",
+            "version": "[3.0.0.12, )"
+          },
           "ThriveGmbH.BottomNavigationBar.XF": {
             "target": "Package",
             "version": "[1.0.2, )"
@@ -751,6 +876,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[3.4.0.1008975, )"
+          },
+          "Xamarin.Forms.Theme.Dark": {
+            "target": "Package",
+            "version": "[1.0.0.43-pre1, )"
           }
         },
         "imports": [
@@ -766,8 +895,48 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
+      "message": "Package 'modernhttpclient 2.4.2' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "modernhttpclient",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
       "message": "Package 'ThriveGmbH.BottomNavigationBar.XF 1.0.2' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "ThriveGmbH.BottomNavigationBar.XF",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Xamarin.Forms.Pages 2.3.0.38-pre2' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Xamarin.Forms.Pages",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Xamarin.Forms.Theme.Base 1.0.0.43-pre1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Xamarin.Forms.Theme.Base",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Xamarin.Forms.Theme.Dark 1.0.0.43-pre1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Xamarin.Forms.Theme.Dark",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"
       ]

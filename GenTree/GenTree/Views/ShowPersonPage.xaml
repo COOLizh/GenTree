@@ -7,7 +7,13 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
-                <Image Source="person.png" HeightRequest="150" WidthRequest="150"/>
+                <Image x:Name="pers" Source="person.png" HeightRequest="150" WidthRequest="150">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="TapGestureRecognizer_Tapped"
+                            NumberOfTapsRequired="2"/>
+                    </Image.GestureRecognizers>
+                </Image>
             </StackLayout>
 
             <BoxView  x:Name="Separator1" BackgroundColor="LightSeaGreen" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
@@ -20,7 +26,10 @@
                     HorizontalOptions="Start" TextColor="Black"
                     FontSize="Large"/>
                 <BoxView  x:Name="Separator2" BackgroundColor="LightSeaGreen" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+                <Label x:Name="Path"/>
+                <BoxView  x:Name="Separator3" BackgroundColor="LightSeaGreen" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
                 <Button Text="{translation:Translate DeleteMes}" Command="{Binding ListViewModel.DeletePersonCommand}" CommandParameter="{Binding}"/>
+                <!--<Button x:Name="SetPhButton" Clicked="SetPhButton_Clicked" Text="Add photo from file"/>-->
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
